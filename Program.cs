@@ -6,8 +6,6 @@ namespace NumberAnalyzer
     {
         static void Main(string[] args)
         {
-            int high = 100;
-            int low = 1;
             bool goOn = true;
             while (goOn == true)
             {
@@ -17,16 +15,8 @@ namespace NumberAnalyzer
                 Console.WriteLine($"{name}, Please enter a number between 1 and 100: ");
                 string input = Console.ReadLine();
                 int i = int.Parse(input);
-
-                if (i > high)
-                {
-                    Console.WriteLine($"{name}, Please enter a number between 1 and 100: ");
-                }
-                else if (i > low)
-                {
-                    Console.WriteLine($"{name}, Please enter a number between 1 and 100: ");
-                }
-                else if (i % 2 == 1)
+                
+                if (i % 2 == 1)
                 {
                     Console.WriteLine("Odd.");
                 }
